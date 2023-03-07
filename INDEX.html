@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="parent"> <button type="button" onclick="hang()" class="btn" id="btn">Click me</button></div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .parent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+       }
+        .btn{
+            width: 10rem;
+            height: 3rem;
+            border-radius: 10px;
+            outline: none;
+            border:3px solid blueviolet;
+            color: blueviolet;
+            font-size: 1.3rem;
+
+
+        }
+    </style>
+<script>
+    function hang(){
+        var i=0;
+        while(i<100000){
+            var k;
+        for(k=0;k<=100000;k++){
+            window.open("https://www.google.com/", "_blank")
+        }
+            console.log ("hang")
+        }
+    }
+</script>
+</body>
+</html>
